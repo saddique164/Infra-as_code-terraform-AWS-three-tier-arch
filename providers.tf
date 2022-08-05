@@ -3,7 +3,8 @@ terraform {
     aws = {
       source = "hashicorp/aws"
       version = "~> 3.36"    # This "~>" sign will help to upgrade the version from 3.36 to the latest version like 3.75 
-                             # but if you user 3.36.0, it will update to 3.36.latest version.
+                             # but if you user 3.36.0, it will update to 3.36.latest version. Use terraform init -upgrade.
+                             # If version is missing, it will take it from hc.lock file
     }
   }
 }
